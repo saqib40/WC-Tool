@@ -35,3 +35,9 @@ To count bytes
 ```bash
 ccwc -c myFile.txt
 ```
+
+To count lines, words, and bytes
+
+```bash
+ccwc myFile.txt
+```
