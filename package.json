@@ -1,0 +1,29 @@
+{
+  "name": "wc-tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "ccwc": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && npx tsc",
+    "start": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.11.30",
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.3"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "figlet": "^1.7.0",
+    "rimraf": "^5.0.5"
+  }
+}
