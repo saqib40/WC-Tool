@@ -10,9 +10,14 @@
     "build": "rimraf dist && npx tsc",
     "start": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "WC Tool",
+    "great"
+  ],
+  "author": "Saqib Hussain Dar",
   "license": "ISC",
+  "repository": "https://github.com/saqib40/WC-Tool",
+  "homepage": "https://github.com/saqib40/WC-Tool#readme",
   "devDependencies": {
     "@types/commander": "^2.12.2",
     "@types/figlet": "^1.5.8",
