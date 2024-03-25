@@ -6,14 +6,18 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
-      - name: node
-        uses: actions/setup-node@v2
+      - name: Checkout code
+        uses: actions/checkout@v3  # Updated to latest version
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3  # Updated to latest version
         with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org
-      - name: publish
+          node-version: 20.x 
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Publish package
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.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}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
